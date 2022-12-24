@@ -1,0 +1,90 @@
+* {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(128, 128, 128, 0.199);
+    height: auto;
+}
+
+nav #logo {
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: large;
+    font-weight:900;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 325px;
+}
+
+nav ul li {
+    font-size: 95%;
+    float: left;
+    border-right: 1px grey solid;
+    display: inline-block;
+    padding: 7px;
+    margin: 5px 0px;
+    width: 55px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.308);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(0, 255, 255, 0.144);
+}
+
+/* for css hover just incase we're not using javascipt hover */
+/* nav ul li:hover {
+    background-color: rgba(128, 128, 128, 0.986);
+    cursor: pointer;
+} */
+
+/* this class is not in the index.html file. it's created here just for use in js */
+.highLightedBtn {
+    background-color: grey;
+}
+/* ;;;;;;;;;;;;;;;;; */
+
+#html {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-left: 1px grey solid;
+}
+
+#output {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+textarea {
+    margin: 0;
+    resize: none;
+    border-color: grey;
+    border-top: none;
+    border-bottom: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.notHidden {
+    display: block;
+}
+
+iframe {
+    border: none;
+}
+
+.area {
+    float: left;
+    width: 50%;
+    border-left: none;
+}

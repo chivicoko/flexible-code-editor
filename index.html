@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- for offline(if offline version is in the computer), it should be something like this, below -->
+    <link href="jquery-ui-1.13.2/jquery-ui.css" rel="stylesheet">
+
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <script src="jquery-ui-1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+    <nav>
+        <div id="logo">Flexible Code Editor</div>
+        <ul>
+            <li class="toggleBtn active" id="html">HTML</li>
+            <li class="toggleBtn" id="css">CSS</li>
+            <li class="toggleBtn" id="js">JS</li>
+            <li class="toggleBtn active" id="output">Output</li>
+        </ul>
+    </nav>
+
+    <div id="bodyContainer">
+        <textarea class="area" id="htmlArea" placeholder="Insert your HTML code here"><p id="para">Hello World</p></textarea>
+        <textarea class="area hidden" id="cssArea" placeholder="Insert your CSS code here">p{color:red;}</textarea>
+        <textarea class="area hidden" id="jsArea" placeholder="Insert your javascript code here">
+            document.getElementById('para').style.backgroundColor = 'grey';</textarea>
+        <iframe class="area" id="outputArea"></iframe>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
